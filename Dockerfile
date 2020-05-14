@@ -1,4 +1,4 @@
-FROM flink:1.9.1
+FROM flink:1.10.1
 
 # Configure Flink to use Prometheus as a Metrics reporter and expose the Jar to the classpath
 RUN echo "metrics.reporters: prom" >> "$FLINK_HOME/conf/flink-conf.yaml"; \
